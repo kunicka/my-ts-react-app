@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Footer() {
+function Footer(): JSX.Element {
     return (
         <div>
             <h3>I am an awesome footer of this page</h3>

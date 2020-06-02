@@ -1,10 +1,17 @@
-import React from 'react'
-import DataFetching from "./DataFetching"
+import React from 'react';
+// import DataFetching from './DataFetching.js';
+import CategoryList from "./CategoryList";
+import StatePlayground from "./StatePlayground.js";
 
-function Main() {
+
+function Main():JSX.Element {
     return (
-        <div className="div-container">
-            <DataFetching/>
+        <div>
+            {/* <DataFetching/> */}
+            <CategoryList/>
+            <StatePlayground/>
+            
+
         </div>
     )
 }
