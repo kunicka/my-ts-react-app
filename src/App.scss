@@ -1,0 +1,45 @@
+$primary-font: 'Nunito', sans-serif;
+$header-font: 'Domine', serif;
+
+body{
+    font:100%, $primary-font;
+    background-image: url("./img/tlo.png");
+}
+
+%middle-location {
+    text-align: center;
+    padding:1%;
+    margin-block: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+}
+
+%header-grey-box {
+    border-radius: 20px;
+    background-color: rgb(128,128,128);
+    opacity: 0.6;
+}
+
+%div-container {
+    border-radius: 20px;
+    border: 2px, solid, #808080;
+    background-color:white;
+    opacity:0.6;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10em;
+    text-align:center;
+}
+
+h1, h2, h3, h4, h5{
+    @extend %middle-location;
+    @extend %header-grey-box;
+    font: $header-font;
+}
+
+.div-container {
+    @extend %div-container;  
+}
+
+
