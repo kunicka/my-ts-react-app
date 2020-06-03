@@ -5,6 +5,7 @@ import Timer from "./Timer.js";
 import TimerEvery5Sec from "./TimerEvery5Sec.js";
 import TimerHooks from "./TimerHooks.js";
 import InputApi from "./InputApi.js"
+import MessageButton from "./MessageButton.js"
 
 
 function StatePlayground () {
@@ -14,11 +15,13 @@ function StatePlayground () {
         <div>
             <h2>PLAYGROUND</h2>
             <LikeButton/>
+            <MessageButton/>
             <WhatYourNameIs name="Gracjan" serName="Brzdęk"/>
             <Timer/>
             <TimerEvery5Sec/>
             <TimerHooks/>
             <InputApi/>
+
         </div>
     )
 }
