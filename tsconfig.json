@@ -1,16 +1,15 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
+    // allow using js files
     "allowJs": true,
+    // relax some options - switch to true later
+    "strict": false,
+
     "skipLibCheck": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
-    "strict": true,
     "forceConsistentCasingInFileNames": true,
     "module": "esnext",
     "moduleResolution": "node",
@@ -19,7 +18,5 @@
     "noEmit": true,
     "jsx": "react"
   },
-  "include": [
-    "src"
-  ]
+  "include": ["src"]
 }

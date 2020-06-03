@@ -11,6 +11,7 @@
     "@types/react": "^16.9.35",
     "@types/react-dom": "^16.9.8",
     "axios": "^0.19.2",
+    "prettier": "^2.0.5",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
@@ -20,7 +21,10 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "format": "prettier src --write",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "lint": "eslint --ext .ts,.tsx src"
   },
   "eslintConfig": {
     "extends": "react-app"

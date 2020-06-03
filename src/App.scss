@@ -2,49 +2,50 @@ $primary-font: 'Nunito', sans-serif;
 $header-font: 'Domine', serif;
 $primary-color: balck;
 
-body{
-    font:100%, $primary-font;
-    background-image: url("./img/tlo.png");
+body {
+  font: 100%, $primary-font;
+  background-image: url('./img/tlo.png');
 }
 
 %middle-location {
-    text-align: center;
-    padding:1%;
-    margin-block: 10%;
-    margin-left: auto;
-    margin-right: auto;
-    width: 20em;
+  text-align: center;
+  padding: 1%;
+  margin-block: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20em;
 }
 
 %header-grey-box {
-    border-radius: 20px;
-    background-color: rgb(128,128,128);
-    opacity: 0.6;
-    margin-left: auto;
-    margin-right: auto;
+  border-radius: 20px;
+  background-color: rgb(128, 128, 128);
+  opacity: 0.6;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 %div-container {
-    border-radius: 20px;
-    border: 2px, solid, #808080;
-    background-color:white;
-    margin-left: auto;
-    margin-right: auto;
-    width: 20em;
-    text-align:center;
-    color:grey;
-    
+  border-radius: 20px;
+  border: 2px, solid, #808080;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20em;
+  text-align: center;
+  color: grey;
 }
 
-h1, h2, h3, h4, h5{
-    @extend %middle-location;
-    @extend %header-grey-box;
-    font: $header-font;
-    color: $primary-color;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  @extend %middle-location;
+  @extend %header-grey-box;
+  font: $header-font;
+  color: $primary-color;
 }
 
 .div-container {
-    @extend %div-container;  
+  @extend %div-container;
 }
-
-
