@@ -23,11 +23,16 @@ export const CategoryListComponent: React.FC<CategoryListComponentProps> = (prop
   //     return htmlElement;
   // } }
 
+  const ShowCategories=(subcatArray) => {
+    const subcategoryItem: JSX.Element = subcatArray.map((item) => <option key={item.id}>item.id</option>);
+  }
+
   return (
     <div className="div-container">
       {props.post.id} {props.post.category}
       <select id="props.post.id" name={props.post.category}>
-        {/* {ShowCategories} */}
+      {props.post.id} {props.post.category}
+        {ShowCategories}
       </select>
     </div>
   );

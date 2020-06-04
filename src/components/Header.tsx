@@ -2,6 +2,6 @@ import React from 'react';
 
 export const Header: React.FC = () => (
   <div>
-    <h1>I am a sexi header of this page !</h1>
+    <h1>Projekt kończący drugi tydzień stażu</h1>
   </div>
 );
