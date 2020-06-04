@@ -2,8 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
 export const DataFetching = () => {
-  // TIP: you can provide generictype argument to useState like this!
-  // FIXME: nie wiem jaki typ API zwraca wiez zatypuje jako array of "any"
+  
   const [posts, setPosts] = useState<any[]>([]);
 
   useEffect(() => {
@@ -16,10 +15,11 @@ export const DataFetching = () => {
       .catch((err) => {
         console.log(err);
       });
-  });
+  },[posts]);
   return (
-    <div>
-      Poniżej znajduje się rozwijana lista tytułów postów z JASON PLACEHOLDER
+    <div className="div-container">
+      <h5>API DATA FETCHING</h5>
+      <p>Poniżej znajduje się rozwijana lista tytułów postów z JASON PLACEHOLDER</p>
       <select id="main-category" name="main-category">
         {posts.map((post) => (
           <option key={post.id} value={post.title}>

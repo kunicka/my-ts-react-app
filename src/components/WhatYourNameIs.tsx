@@ -6,6 +6,7 @@ export interface WhatYourNameIsProps {
 }
 
 export const WhatYourNameIs: React.FC<WhatYourNameIsProps> = (props) => {
+
   function formatName() {
     return `Zwykła funkcja: ${props.name} ${props.lastName}`;
   }
@@ -14,6 +15,7 @@ export const WhatYourNameIs: React.FC<WhatYourNameIsProps> = (props) => {
   return (
     <div>
       <h4>Różnica w wywoływaniu funcji oraz arrow function </h4>
+    
       <div className="div-container">
         {formatName()}
         <br />

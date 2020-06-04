@@ -17,8 +17,8 @@ export const CategoryList: React.FC<CategoryListProps> = () => {
 
   return (
     <div>
-      <h4>Zaplanuj co zrobisz w tym tygodniu</h4>
-      {categoryList}
+      <h4>Zaplanuj co zrobisz w tym tygodniu z podanych kategorii:</h4>
+      <p>{categoryList}</p>
     </div>
   );
 };

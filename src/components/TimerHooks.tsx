@@ -14,9 +14,12 @@ export const TimerHooks = () => {
     };
   }, []);
 
+
+
   return (
-    <div>
-      <h3>Hook Timer: {date.toLocaleString()}</h3>
+    <div className="div-container">
+      <h5>HOOK TIMER: </h5>
+      <p>{date.toLocaleString()}</p>
     </div>
   );
 };

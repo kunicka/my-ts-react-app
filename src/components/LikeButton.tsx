@@ -1,13 +1,21 @@
 import React, { useState } from 'react';
 
 export const LikeButton: React.FC = () => {
-  const [liked, setLiked] = useState<boolean>(false); // does not need useState<boolean>(false); because this boolean is "inferred" from inital value
+  const [message, setMessage] = useState<string>('Jeśli Ci się podobało, zalajkuj poniżej.');
+  const [buttonString, setButtonString] = useState<string>('Lubię to!');
 
   return (
-    <div>
-      <h4>Guzik lajkowania</h4>
+    <div className="div-container">
+      <h5>LIKE BUTTON</h5>
       <div className="div-container">
-        <button onClick={() => setLiked(true)}>Like! {liked}</button>
+        <p>{message}</p>
+        <button
+          onClick={(e) => {
+            setMessage('Dziękuję za lajka');
+            setButtonString('Lubisz to!');
+          }}>
+          {buttonString}
+        </button>
       </div>
     </div>
   );

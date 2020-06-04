@@ -29,11 +29,12 @@ export const CategoryListComponent: React.FC<CategoryListComponentProps> = (prop
 
   return (
     <div className="div-container">
-      {props.post.id} {props.post.category}
+      <p>{props.post.id} {props.post.category}
       <select id="props.post.id" name={props.post.category}>
       {props.post.id} {props.post.category}
         {ShowCategories}
       </select>
+      </p>
     </div>
   );
 };
