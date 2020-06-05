@@ -8,6 +8,7 @@ import { TimerHooks } from './TimerHooks';
 import { MessageButton } from './MessageButton';
 import {DataFetching} from './DataFetching'
 import {UseEffectHook} from './UseEffectHook';
+// import {CategoryList} from './CategoryList'
 
 
 export const StatePlayground = () => {
@@ -24,7 +25,7 @@ export const StatePlayground = () => {
       <UseEffectHook/>
       
       <DataFetching/>
-      
+      {/* <CategoryList/> */}
       
     </div>
   );

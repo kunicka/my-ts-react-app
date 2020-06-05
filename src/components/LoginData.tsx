@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import {WelcomeMessage} from "./WelcomeMessage"
 
+
 export const LoginData: React.FC = () => {
   const [name, setName] = useState<string>('Jan');
   const [lastname, setLastname] = useState<string>('Kowalski');
   const [nameinfo, setNameinfo] = useState<any>('Nie jesteś zalogowany');
   const [buttonDisplay, setButtonDisplay] = useState<boolean>(false);
+  const [buttonString, setButtonString] = useState<string>("Zaloguj się")
   
 
   return (
@@ -34,11 +36,12 @@ export const LoginData: React.FC = () => {
       </form>
       <button
         onClick={(e) => {
-          setNameinfo(`Witaj ${name} ${lastname}!`);
-          setButtonDisplay(!buttonDisplay)
+          setNameinfo(`${name} zalogowanie przebiegło poprawnie!`);
+          setButtonDisplay(!buttonDisplay);
+          setButtonString("Udało się!")
         }}
       >
-        Zaloguj się
+        {buttonString}
       </button>
       <p>{nameinfo}</p>
       {buttonDisplay && <WelcomeMessage name={name} lastname={lastname}/>}
